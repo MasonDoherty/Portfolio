@@ -33,7 +33,7 @@
 }
 
 .mainName {
-  color: var(--txt-sec-darcker);
+  color: #40c311;
   text-transform: uppercase;
 
 }
@@ -48,18 +48,17 @@
   & > img {
     min-width: 230px;
     height: auto;
+    
   }
 }
 
 .typewriterWrapper {
   font-size: 2.2em;
-  color: #be6adf;
-  font-weight: 600;
+color: #40c311;  font-weight: 600;
 }
 .typewriterCursor {
   font-size: 2.4em;
-  color: #b562d6;
-}
+color: #40c311;}
 
 
 @media (max-width: 925px) {
@@ -71,4 +70,10 @@
     justify-content: center;
     width: 60%;
   }
+}
+.photo{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #40c311;
+  border-radius: 100px;
 }

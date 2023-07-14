@@ -11,7 +11,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const resumeLink =
-  'https://raw.githubusercontent.com/vsnaichuk/vsnaichuk/master/CV.pdf';
+  'https://drive.google.com/file/d/1pinDOPriGODttNvXr16ZjUIu1IlBCBp5/view?usp=sharing';
 
 const Resume = () => {
   const pdfWrapper = useRef(null);

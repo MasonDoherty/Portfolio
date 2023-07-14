@@ -21,28 +21,28 @@ const IntroSection = () => {
 
           <div className={s.description}>
             <p>
-              I'm a React Native Developer with two years of
-              experience <br />
-              creating mobile apps for the iOS, Android, and Web
-              platforms.
+              I'm a Full Stack Developer with two years of experience{' '}
+              <br />
+              creating front-end projects, back-end projects as well
+              as an MVP for AssingRef
             </p>
 
             <p>
               My skills include proficiency in{' '}
               <i>
                 <b className={s.purple}>
-                  TypeScript, React, React Native,
+                  HTML, CSS, Javascript, React, C#, .Net, SQL
                 </b>
               </i>
               <br />
               and other relevant technologies. I have experience in
               integrating various <br />
-              third-party libraries, API integration, push
-              notifications and analytics.
+              third-party libraries, constructing RESTful API's and
+              designing SQL Tables and Stored Procedures
             </p>
 
             <p>
-              My field of Interest's are building new
+              My field of Interest's are building and maintaining new
               <i>
                 <b className={s.purple}> Technologies and Products</b>
               </i>
@@ -64,7 +64,7 @@ const IntroSection = () => {
         <ul className={s.socialLinks}>
           <li className={s.socialLink}>
             <a
-              href="https://github.com/vsnaichuk"
+              href="https://github.com/MasonDoherty"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}
@@ -75,29 +75,7 @@ const IntroSection = () => {
           </li>
           <li className={s.socialLink}>
             <a
-              href="https://www.facebook.com/Snaychuk"
-              target="_blank"
-              rel="noreferrer"
-              className={s.socialIcon}
-              aria-label="facebook"
-            >
-              <FaFacebookSquare />
-            </a>
-          </li>
-          <li className={s.socialLink}>
-            <a
-              href="https://t.me/snaichuk_v"
-              target="_blank"
-              rel="noreferrer"
-              className={s.socialIcon}
-              aria-label="telegram"
-            >
-              <FaTelegramPlane />
-            </a>
-          </li>
-          <li className={s.socialLink}>
-            <a
-              href="https://www.linkedin.com/in/volodymyr-snaichuk-74a389124/"
+              href="https://www.linkedin.com/in/mason-heath-doherty/"
               target="_blank"
               rel="noreferrer"
               className={s.socialIcon}

@@ -7,7 +7,7 @@ import MainNavigation from '../../components/Navigation/MainNavigation/MainNavig
 const BaseLayout = ({ children }) => {
   return (
     <div className={s.layout}>
-      <Particles />
+      {/* <Particles /> */}
 
       <Header>
         <MainNavigation />
@@ -15,7 +15,7 @@ const BaseLayout = ({ children }) => {
 
       <div className={s.container}>{children}</div>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

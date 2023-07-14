@@ -6,17 +6,15 @@ const AboutTextCard = () => {
     <div className={s.card}>
       <p style={{ textAlign: 'justify' }}>
         Hi Everyone, I am{' '}
-        <span className={s.purple}>Snaichuk Volodymyr </span>
-        from <span className={s.purple}> Ternopil, Ukraine.</span>
+        <span className={s.purple}>Mason Doherty </span>
+        from{' '}
+        <span className={s.purple}> Laguna Niguel, California.</span>
         <br />
-        Software engineer with expertise in cross-platform development{' '}
+        Full Stack Software engineer with expertise in <br />
+        <span className={s.purple}> .Net, React, and SQL.</span>
         <br />
-        using React Native.
         <br />
-        <br />
-        I have a Bachelor's degree in Computer Science and
-        <br />
-        Master's degree in Project Management from Ternopil Academy.
+        I have an associates degree in Business.
         <br />
         <br />
         Apart from coding, some other activities that I love to do!
@@ -24,13 +22,13 @@ const AboutTextCard = () => {
 
       <ul>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Playing Games
+          <ImPointRight /> Fitness
         </li>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Reading
+          <ImPointRight /> Hiking
         </li>
         <li className={s.aboutActivity}>
-          <ImPointRight /> Travelling
+          <ImPointRight /> Playing with my dog
         </li>
       </ul>
     </div>

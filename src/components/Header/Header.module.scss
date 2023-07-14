@@ -16,10 +16,11 @@
 }
 
 .highlighted {
-  background-color: var(--bg-header);
+  background-color: #0e3400;
   outline: rgb(33, 37, 41) dashed 0;
   box-shadow: rgba(9, 5, 29, 0.173) 0 10px 10px 0;
   backdrop-filter: blur(15px);
+  opacity: 80%;
 }
 
 @media (max-width: 768px) {
