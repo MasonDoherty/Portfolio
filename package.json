@@ -1,6 +1,5 @@
-{"homepage": "https://github.com/MasonDoherty/Portfolio",
-
-
+{
+  "homepage": "./",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -32,7 +31,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+     "build": "react-scripts build --public-url=./",
     "serve": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

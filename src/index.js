@@ -1,4 +1,5 @@
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
@@ -12,8 +13,7 @@ const Root = () => {
   );
 };
 
-const root = createRoot(document.getElementById('root'));
-root.render(<Root />);
+ReactDOM.render(<Root />, document.getElementById('root'));
 
 reportWebVitals();
 serviceWorkerRegistration.register();
