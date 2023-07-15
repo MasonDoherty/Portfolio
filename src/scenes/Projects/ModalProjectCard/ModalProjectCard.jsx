@@ -22,14 +22,15 @@ const ModalProjectCard = () => {
   return (
     <Modal show={isVisible} onClose={toggleModal}>
       <div className={s.cardWrapper}>
-        <LazyLoadImage
-          alt="project-img"
-          src={image.src}
-          effect="blur"
-          width="100%"
-          wrapperClassName={s.image}
-          placeholderSrc={image.placeholderSrc}
-        />
+        <div className={s.image}>
+          <LazyLoadImage
+            alt="project-img"
+            src={image.src}
+            effect="blur"
+            width="100%"
+            placeholderSrc={image.placeholderSrc}
+          />
+        </div>
 
         <div className={s.cardBody}>
           <h3 className={s.title}>{title}</h3>

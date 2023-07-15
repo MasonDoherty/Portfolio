@@ -5,7 +5,6 @@ import NavLinks from '../NavLinks/NavLinks';
 import SideDrawer from '../SideDrawer/SideDrawer';
 import Burger from '../Burger/Burger';
 import BtnToggleTheme from '../../BtnToggleTheme/BtnToggleTheme';
-import Logo from '../../Logo/Logo';
 
 const MainNavigation = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -27,8 +26,6 @@ const MainNavigation = () => {
         {() => (
           <>
             <Burger onClick={toggleDrawer} />
-
-            <Logo className={s.mobile} />
 
             <BtnToggleTheme className={s.mobile} />
           </>
