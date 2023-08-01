@@ -61,6 +61,7 @@ const Resume = () => {
           <Document file={resume}>
             <Page pageNumber={1} width={pdfPageWidth} />
             <Page pageNumber={2} width={pdfPageWidth} />
+            <Page pageNumber={3} width={pdfPageWidth} />
           </Document>
         </div>
       </div>
