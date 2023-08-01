@@ -1,9 +1,20 @@
 import s from './Projects.module.scss';
+import React, { useState } from 'react';
 import projects from '../../data/projects';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import ProjectCard from './ProjectCard/ProjectCard';
-
+import ModalProjectCard from './ModalProjectCard/ModalProjectCard';
 const Projects = () => {
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
+
+  const handleOpenModal = (projectId) => {
+    setSelectedProjectId(projectId);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProjectId(null);
+  };
+
   return (
     <BaseLayout>
       <div className={s.content}>
@@ -15,10 +26,24 @@ const Projects = () => {
         </p>
 
         <ul className={s.projects}>
-          {projects.map((props) => (
-            <ProjectCard key={props.id} {...props} />
+          {projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => handleOpenModal(project.id)}
+            />
           ))}
         </ul>
+
+        {/* Render the modal */}
+        {selectedProjectId && (
+          <ModalProjectCard
+            project={projects.find(
+              (project) => project.id === selectedProjectId,
+            )}
+            onClose={handleCloseModal}
+          />
+        )}
       </div>
     </BaseLayout>
   );

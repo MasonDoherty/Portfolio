@@ -24,10 +24,11 @@ const ModalProjectCard = () => {
       <div className={s.cardWrapper}>
         <div className={s.image}>
           <LazyLoadImage
-            alt="project-img"
-            src={image.src}
+            alt="card-img"
             effect="blur"
+            src={image.src}
             width="100%"
+            style={{ minHeight: '10rem' }}
             placeholderSrc={image.placeholderSrc}
           />
         </div>

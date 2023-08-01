@@ -20,7 +20,7 @@ const IntroSection = () => {
               I'm a Full Stack Developer with two years of experience{' '}
               <br />
               creating front-end projects, back-end projects as well
-              as an MVP for AssingRef
+              as an MVP for Assign Ref
             </p>
 
             <p>
