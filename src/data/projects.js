@@ -1,7 +1,7 @@
-import assignrefImage from '../../../assets/assignref.jpg';
-import smartmockupsImage from '../../../assets/smartmockups_lk0hpnr6.jpg';
-import h2tmockupImage from '../../../assets/h2tmockup.jpg';
-import coffeemockupImage from '../../../assets/coffeemockup.jpg';
+import assignrefImage from '../assets/assignref.jpg';
+import smartmockupsImage from '../assets/smartmockups_lk0hpnr6.jpg';
+import h2tmockupImage from '../assets/h2tmockup.jpg';
+import coffeemockupImage from '../assets/coffeemockup.jpg';
 const data = [
   {
     id: '1',
@@ -73,7 +73,14 @@ const data = [
       placeholderSrc: coffeemockupImage,
     },
 
-    technologies: ['#react', '#square'],
+    technologies: [
+      '#react',
+      '#css',
+      '#square',
+      '#NPM',
+      '#react-router-dom',
+      '#slick-carousel',
+    ],
   },
 ];
 
