@@ -1,7 +1,7 @@
 import assignrefImage from '../assets/assignref.jpg';
 import smartmockupsImage from '../assets/smartmockups_lk0hpnr6.jpg';
 import h2tmockupImage from '../assets/h2tmockup.jpg';
-import coffeemockupImage from '../assets/coffeemockup.jpg';
+// import coffeemockupImage from '../assets/coffeemockup.jpg';
 import localsOnlyImage from '../assets/smartmockups_lmtpiptm.jpg';
 const data = [
   {
