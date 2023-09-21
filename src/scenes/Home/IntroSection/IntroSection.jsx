@@ -1,5 +1,5 @@
 import s from './IntroSection.module.scss';
-import avatar from '../../../assets/avatar.svg';
+import avatar from '../../../assets/avataaars.png';
 import { AiFillGithub } from 'react-icons/ai';
 import { FaLinkedinIn } from 'react-icons/fa';
 import Tilt from 'react-parallax-tilt';
@@ -17,37 +17,48 @@ const IntroSection = () => {
 
           <div className={s.description}>
             <p>
-              I'm a Full Stack Developer with two years of experience{' '}
-              <br />
+              {' '}
+              I'm a<b className={s.purple}>
+                {' '}
+                Full Stack Developer
+              </b>{' '}
+              with three years of experience <br />
               creating front-end projects, back-end projects as well
-              as an MVP for Assign Ref
+              as a <b className={s.purple}>minimum viable product </b>
+              for Assign Ref
             </p>
 
             <p>
               My skills include proficiency in{' '}
               <i>
                 <b className={s.purple}>
-                  HTML, CSS, Javascript, React, C#, .Net, SQL
+                  HTML, CSS, Javascript, React, React Native, C#,
+                  .Net, SQL
                 </b>
               </i>
               <br />
               and other relevant technologies. I have experience in
               integrating various <br />
               third-party libraries, constructing RESTful API's and
-              designing SQL Tables and Stored Procedures
+              designing SQL Databases
             </p>
 
             <p>
               My field of Interest's are building and maintaining new
               <i>
-                <b className={s.purple}> Technologies and Products</b>
+                <b className={s.purple}> Websites and Apps</b>
               </i>
             </p>
           </div>
         </div>
 
         <Tilt trackOnWindow={true}>
-          <LazyLoadImage alt="avatar" effect="blur" src={avatar} />
+          <LazyLoadImage
+            alt="avatar"
+            effect="blur"
+            className={s.avatarimg}
+            src={avatar}
+          />
         </Tilt>
       </div>
 

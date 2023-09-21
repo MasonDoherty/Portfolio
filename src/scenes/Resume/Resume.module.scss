@@ -16,9 +16,8 @@
 }
 
 .filesImg {
-  width: 35%;
-  min-width: 120px;
-  padding: 1rem;
+ scale: .5;
+ max-height: 300px;
 
   img {
     width: 100%;

@@ -28,7 +28,13 @@ const NavLinks = () => {
       <li>
         <NavLink to={routes.PROJECTS}>
           <AiOutlineFundProjectionScreen />
-          Projects
+          App Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to={routes.UXUIS}>
+          <AiOutlineFundProjectionScreen />
+          UX/UI Case Studies
         </NavLink>
       </li>
 
