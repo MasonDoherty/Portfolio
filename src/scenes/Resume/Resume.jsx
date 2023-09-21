@@ -4,12 +4,12 @@ import { ReactComponent as DownloadIcon } from '../../assets/download.svg';
 import React, { useRef, useState, useEffect } from 'react';
 import BaseLayout from '../../layouts/BaseLayout/BaseLayout';
 import Button from '../../components/UIElements/Button/Button';
-import resume from '../../assets/MasonDoherty-SoftwareEngineer-TechExeperience.pdf';
+import resume from '../../assets/MasonDoherty-SWE.pdf';
 import { Page, Document, pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 const resumeLink =
-  'https://drive.google.com/file/d/1cXyhhO_6U7wmXJ67BVIo9XBLaOzE1Aqx/view?usp=sharing';
+  'https://drive.google.com/file/d/1T9HS1JfEp-7tjJqDFbKbgOJA_OXqeOSB/view?usp=sharing';
 const Resume = () => {
   const pdfWrapper = useRef(null);
   const [pdfPageWidth, setPdfPageWidth] = useState(null);
@@ -61,7 +61,7 @@ const Resume = () => {
           <Document file={resume}>
             <Page pageNumber={1} width={pdfPageWidth} />
             <Page pageNumber={2} width={pdfPageWidth} />
-            <Page pageNumber={3} width={pdfPageWidth} />
+            {/* <Page pageNumber={3} width={pdfPageWidth} /> */}
           </Document>
         </div>
       </div>

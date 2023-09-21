@@ -2,6 +2,7 @@ import assignrefImage from '../assets/assignref.jpg';
 import smartmockupsImage from '../assets/smartmockups_lk0hpnr6.jpg';
 import h2tmockupImage from '../assets/h2tmockup.jpg';
 import coffeemockupImage from '../assets/coffeemockup.jpg';
+import localsOnlyImage from '../assets/smartmockups_lmtpiptm.jpg';
 const data = [
   {
     id: '1',
@@ -65,22 +66,17 @@ const data = [
   },
   {
     id: '4',
-    title: 'Masons Coffee',
+    title: 'Locals Only',
     description:
-      'Masons Coffee is an innovative e-commerce platform dedicated to coffee enthusiasts, offering a personalized shopping experience with handpicked coffee blends from around the world. With customizable grind options and exclusive perks for Subscribed Members, we foster a vibrant coffee-loving community to share brewing tips and indulge in all things coffee. Our user-friendly interface prioritizes data security, providing a delightful journey for coffee lovers',
+      'Locals Only is the ultimate app designed exclusively for local businesses. Empower your communitys entrepreneurs by providing them with personalized, branded apps that showcase their services, business information, and promotions. With Locals Only, businesses can effortlessly connect with local customers, boost their online presence, and thrive in todays digital landscape. Elevate local commerce, one business at a time, with Locals Only.',
     image: {
-      src: coffeemockupImage,
-      placeholderSrc: coffeemockupImage,
+      src: localsOnlyImage,
+      placeholderSrc: localsOnlyImage,
     },
-
-    technologies: [
-      '#react',
-      '#css',
-      '#square',
-      '#NPM',
-      '#react-router-dom',
-      '#slick-carousel',
-    ],
+    links: {
+      site: 'https://github.com/MasonDoherty/OnlyLocals',
+    },
+    technologies: ['#React Native', '#css'],
   },
 ];
 

@@ -1,5 +1,5 @@
-import s from './ModalProjectCard.module.scss';
-import projects from '../../../data/projects';
+import s from './ModalCaseCard.module.scss';
+import projects from '../../../data/caseStudies';
 import { BiLinkExternal } from 'react-icons/bi';
 import Modal from '../../../components/Modal/Modal';
 import Button from '../../../components/UIElements/Button/Button';
@@ -10,8 +10,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ModalProjectCard = () => {
   const { id } = useParams();
-  const { image, title, links, technologies, description } =
-    projects.find((p) => id === p.id);
+  const { title, image } = projects.find((p) => id === p.id);
   const { isVisible, toggleModal } = useModal();
 
   useEffect(() => {
@@ -27,7 +26,6 @@ const ModalProjectCard = () => {
             src={image.src}
             effect="blur"
             width="100%"
-            height="400px"
             placeholderSrc={image.placeholderSrc}
           />
         </div>
@@ -35,17 +33,15 @@ const ModalProjectCard = () => {
         <div className={s.cardBody}>
           <h3 className={s.title}>{title}</h3>
 
-          <h3>{description}</h3>
-
           <div className={s.technologies}>
-            {technologies.map((tech, index) => (
+            {/* {technologies.map((tech, index) => (
               <span key={index}>{tech}</span>
-            ))}
+            ))} */}
           </div>
         </div>
 
         <div className={s.cardFooter}>
-          {links && links.site ? (
+          {/* {links && links.site ? (
             <Button
               style={{ width: '12rem' }}
               className="primary"
@@ -62,9 +58,9 @@ const ModalProjectCard = () => {
             >
               In Progress (No Link)
             </Button>
-          )}
+          )} */}
 
-          {!!links && links.repo && (
+          {/* {!!links && links.repo && (
             <Button
               style={{ width: '12rem' }}
               className="primary"
@@ -73,7 +69,7 @@ const ModalProjectCard = () => {
             >
               <BiLinkExternal /> &nbsp; Know more
             </Button>
-          )}
+          )} */}
         </div>
       </div>
     </Modal>
