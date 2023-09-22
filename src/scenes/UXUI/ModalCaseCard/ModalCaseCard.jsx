@@ -1,8 +1,8 @@
 import s from './ModalCaseCard.module.scss';
 import projects from '../../../data/caseStudies';
-import { BiLinkExternal } from 'react-icons/bi';
+// import { BiLinkExternal } from 'react-icons/bi';
 import Modal from '../../../components/Modal/Modal';
-import Button from '../../../components/UIElements/Button/Button';
+// import Button from '../../../components/UIElements/Button/Button';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useModal } from '../../../hooks/modalHook';
